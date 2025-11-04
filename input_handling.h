@@ -1,6 +1,6 @@
 #ifndef IB_TOOLS_INPUT_HANDLING_H
 #define IB_TOOLS_INPUT_HANDLING_H
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
 
 double roundDouble(double x, int n);
@@ -11,4 +11,4 @@ void checkAnswerS(const string &input, const string &solution);
 
 string doubleToString(double value);
 
-#endif IB_TOOLS_INPUT_HANDLING_H
+#endif
