@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include <../input_handling.h>
+#include "../input_handling.h"
 using namespace std;
 
 struct vec{
@@ -161,7 +161,7 @@ int main() {
     while(true) {
         int activity = rand() % questions.size();
         questions[activity]();
-        string cont; cin >> cont; getline(cin, cont);
+        string cont; getline(cin >> ws, cont);
     }
     return 0;
 }
