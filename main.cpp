@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-
+#include <../input_handling.h>
 using namespace std;
 
 struct vec{
