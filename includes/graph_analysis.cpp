@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 #include "input_handling.h"
+#include "graph_analysis.h"
 
 using namespace std;
 
@@ -25,3 +26,4 @@ void analyzeGraph() {
     string ans, cont; getline(cin, ans);
     checkAnswerS(ans, graphs[graph].second[element].second);
 }
+
