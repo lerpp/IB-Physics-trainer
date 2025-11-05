@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #include "input_handling.h"
-#nclude "velocity_distance_time.h"
+#include "velocity_distance_time.h"
 
 using namespace std;
 
@@ -26,4 +26,5 @@ void vdt() {
         checkAnswerD(ans, t);
     }
 }
+
 
