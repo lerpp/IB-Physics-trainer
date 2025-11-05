@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 #include "input_handling.h"
+#include "add_vectors.h"
 
 using namespace std;
 
@@ -52,3 +53,4 @@ void addVector() {
     string ans; getline(cin, ans);
     checkAnswerS(ans, doubleToString(vecAns.magnitude) + " " + vecAns.direction);
 }
+
