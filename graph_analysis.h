@@ -1,0 +1,6 @@
+#ifndef IB_PHYS_TOOL_GRAPH_ANALYSIS_H
+#define IB_PHYS_TOOL_GRAPH_ANALYSIS_H
+
+void analyzeGraph();
+
+#endif //IB_PHYS_TOOL_GRAPH_ANALYSIS_H
