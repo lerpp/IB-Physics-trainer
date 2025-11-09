@@ -1,27 +1,32 @@
 #include <iostream>
 #include <vector>
+#include <ctime>
+#include <string>
 #include "includes/cue_cards.h"
 #include "includes/acceleration_velocity_time.h"
 #include "includes/velocity_distance_time.h"
 #include "includes/graph_analysis.h"
 #include "includes/add_vectors.h"
+#include "includes/projectile_motion.h"
 
-using namespace std;
+using std::vector, std::string, std::cin, std::cout, std::ws;
 
 const vector questions = {
     pickCueCard,
     analyzeGraph,
     vdt,
     avt,
-    addVector
+    addVector,
+    projectile_motion
 };
 
 int main() {
     srand(time(0));
-    while(true) {
+    while(false) {
         int activity = rand() % questions.size();
         questions[activity]();
         string cont; getline(cin >> ws, cont);
     }
+    projectile_motion();
     return 0;
 }
