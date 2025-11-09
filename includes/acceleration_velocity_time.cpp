@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 #include "input_handling.h"
 #include "acceleration_velocity_time.h"
 
@@ -46,4 +46,3 @@ void avt() {
         }
     }
 }
-
