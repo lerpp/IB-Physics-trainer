@@ -1,8 +1,9 @@
 #include <iostream>
 #include <vector>
+#include <string>
 #include "cue_cards.h"
 
-using namespace std;
+using std::vector, std::cin, std::cout, std::pair, std::string;
 
 const vector<pair<string, string>> cueCards = {
     {"What is the difference between a vector and a scalar?", "A scalar has magnitude only, no direction. Examples of scalars are speed and height\nVectors have magnitude and distance. Examples of vectors include displacement and velocity"},
