@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 #include "input_handling.h"
 #include "velocity_distance_time.h"
 
@@ -26,5 +26,3 @@ void vdt() {
         checkAnswerD(ans, t);
     }
 }
-
-
