@@ -36,7 +36,7 @@ void projectile_motion() {
     };
     initY.direction = "[" + initY.ns + "]";
     vec finalY = {
-        .magnitude = sqrt(pow(initY.magnitude, 2) + 2 * gravity * initHeight),
+        .magnitude = roundDouble(sqrt(pow(initY.magnitude, 2) + 2 * gravity * initHeight), 3),
         .ns = "S",
         .ew = "E",
         .angle = 90.0,
@@ -47,7 +47,7 @@ void projectile_motion() {
     double displacementX = roundDouble(initX.magnitude * time, 3);
     double maxHeight = roundDouble(initHeight + (pow(finalY.magnitude, 2) - pow(initY.magnitude, 2) / 2 / gravity), 3);
     double maxHeightTime = roundDouble(initY.magnitude / gravity, 3);
-    int whichone = 1;
+    int whichone = rand() % 2;
     if (whichone == 0) {
         cout << "A ball is thrown from a platform " << initHeight << "m above ground at " << initThrow.magnitude << " m/s " << initThrow.direction << "\nFind the time it takes for the ball to hit the ground\n";
         double ans; cin >> ans;
