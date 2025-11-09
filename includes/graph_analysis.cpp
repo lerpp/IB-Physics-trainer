@@ -1,9 +1,10 @@
 #include <iostream>
 #include <vector>
+#include <string>
 #include "input_handling.h"
 #include "graph_analysis.h"
 
-using namespace std;
+using std::vector, std::pair, std::string, std::cin, std::cout;
 
 const vector<pair<string, vector<pair<string, string>>>> graphs = {
     {"displacement-time", {
