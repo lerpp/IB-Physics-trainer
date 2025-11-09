@@ -1,8 +1,10 @@
 #include <iostream>
 #include <iomanip>
+#include <string>
+#include <sstream>
 #include "input_handling.h"
 
-using namespace std;
+using std::stringstream, std::scientific, std::setprecision, std::cout, std::ostringstream;
 
 double roundDouble( double x, int n ) {
     stringstream ss;
