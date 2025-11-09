@@ -1,14 +1,12 @@
-#include <bits/stdc++.h>
+#include <vector>
+#include <string>
+#include <cmath>
+#include <iostream>
 #include "projectile_motion.h"
 #include "input_handling.h"
 #include "add_vectors.h"
 
-struct vec{
-    double magnitude = 0.0;
-    string ns, ew;
-    double angle = 0.0;
-    string direction;
-};
+using std::vector, std::string, std::cin, std::cout;
 
 const vector<string> directions = {"N", "S", "E", "W"};
 
