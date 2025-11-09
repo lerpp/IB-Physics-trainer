@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 #include "includes/cue_cards.h"
 #include "includes/acceleration_velocity_time.h"
 #include "includes/velocity_distance_time.h"
