@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 #include "cue_cards.h"
 
 using namespace std;
@@ -15,4 +16,3 @@ void pickCueCard() {
     string proceed; cin >> proceed;
     cout << cueCards[card].second << '\n';
 }
-
