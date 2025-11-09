@@ -1,8 +1,9 @@
 #include <iostream>
+#include <string>
 #include "input_handling.h"
 #include "acceleration_velocity_time.h"
 
-using namespace std;
+using std::cin, std::cout;
 
 void avt() {
     double v1 = rand() % 1000 / 10.0 + 1.0;
