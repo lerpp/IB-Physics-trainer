@@ -1,10 +1,11 @@
 #include <iostream>
 #include <cmath>
 #include <vector>
+#include <string>
 #include "input_handling.h"
 #include "add_vectors.h"
 
-using namespace std;
+using std::vector, std::string, std::cin, std::cout, std::getline;
 
 double degToRad(double degrees) {
     return degrees * M_PI / 180.0;
@@ -17,7 +18,6 @@ double radToDeg(double radians) {
 const vector<string> directions = {"N", "S", "E", "W"};
 
 vec sumVecs(const vec &v1, const vec &v2) {
-    cout << v1.direction << endl;
     vec ans;
     double v1rad = degToRad(v1.angle), v2rad = degToRad(v2.angle);
     double v1x = v1.magnitude * cos(v1rad) * (-1 + 2 * (v1.ew == "E"));
