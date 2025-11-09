@@ -1,7 +1,8 @@
 #ifndef IB_TOOLS_INPUT_HANDLING_H
 #define IB_TOOLS_INPUT_HANDLING_H
-#include <bits/stdc++.h>
-using namespace std;
+#include <string>
+
+using std::string;
 
 double roundDouble(double x, int n);
 
