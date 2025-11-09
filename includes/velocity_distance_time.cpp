@@ -1,8 +1,9 @@
 #include <iostream>
+#include <string>
 #include "input_handling.h"
 #include "velocity_distance_time.h"
 
-using namespace std;
+using std::cin, std::cout;
 
 void vdt() {
     double d = rand() % 1000 / 10.0 + 1.0;
