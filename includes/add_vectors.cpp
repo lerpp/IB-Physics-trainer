@@ -1,21 +1,25 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <cmath>
+#include <vector>
 #include "input_handling.h"
 #include "add_vectors.h"
 
 using namespace std;
 
-struct vec{
-    double magnitude = 0.0;
-    string ns, ew;
-    string direction;
-    double angle = 0.0;
-};
+double degToRad(double degrees) {
+    return degrees * M_PI / 180.0;
+}
+
+double radToDeg(double radians) {
+    return radians * 180.0 / M_PI;
+}
 
 const vector<string> directions = {"N", "S", "E", "W"};
 
 vec sumVecs(const vec &v1, const vec &v2) {
+    cout << v1.direction << endl;
     vec ans;
-    double v1rad = M_PI * v1.angle / 180, v2rad = M_PI * v2.angle / 180;
+    double v1rad = degToRad(v1.angle), v2rad = degToRad(v2.angle);
     double v1x = v1.magnitude * cos(v1rad) * (-1 + 2 * (v1.ew == "E"));
     double v1y = v1.magnitude * sin(v1rad) * (-1 + 2 * (v1.ns == "N"));
     double v2x = v2.magnitude * cos(v2rad) * (-1 + 2 * (v2.ew == "E"));
@@ -24,7 +28,7 @@ vec sumVecs(const vec &v1, const vec &v2) {
 
     ans.ns = ansy < 0 ? "S" : "N", ans.ew = ansx < 0 ? "W" : "E";
     ans.magnitude = roundDouble(sqrt(ansx * ansx + ansy * ansy), 3);
-    ans.angle = roundDouble(abs(atan(ansy / ansx) / M_PI * 180), 3);
+    ans.angle = roundDouble(radToDeg(abs(atan(ansy / ansx))), 3);
 
     if (ans.angle == 0.0) ans.direction = "[" + ans.ew + "]";
     else if (ans.angle == 90.0) ans.direction = "[" + ans.ns + "]";
@@ -53,4 +57,3 @@ void addVector() {
     string ans; getline(cin, ans);
     checkAnswerS(ans, doubleToString(vecAns.magnitude) + " " + vecAns.direction);
 }
-
