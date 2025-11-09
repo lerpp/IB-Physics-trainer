@@ -28,7 +28,7 @@ vec sumVecs(const vec &v1, const vec &v2) {
 
     ans.ns = ansy < 0 ? "S" : "N", ans.ew = ansx < 0 ? "W" : "E";
     ans.magnitude = roundDouble(sqrt(ansx * ansx + ansy * ansy), 3);
-    ans.angle = roundDouble(radToDeg(abs(atan(ansy / ansx))), 3);
+    ans.angle = roundDouble(radToDeg(fabs(atan(ansy / ansx))), 3);
 
     if (ans.angle == 0.0) ans.direction = "[" + ans.ew + "]";
     else if (ans.angle == 90.0) ans.direction = "[" + ans.ns + "]";
