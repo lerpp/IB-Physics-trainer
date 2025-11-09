@@ -22,11 +22,10 @@ const vector questions = {
 
 int main() {
     srand(time(0));
-    while(false) {
+    while(true) {
         int activity = rand() % questions.size();
         questions[activity]();
         string cont; getline(cin >> ws, cont);
     }
-    projectile_motion();
     return 0;
 }
