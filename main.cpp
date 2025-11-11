@@ -10,6 +10,7 @@
 #include "includes/projectile_motion.h"
 #include "includes/fma.h"
 #include "includes/continue.h"
+#include "includes/force_pairs.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws;
 
@@ -20,7 +21,8 @@ const vector questions = {
     avt,
     addVector,
     projectile_motion,
-    fma
+    fma,
+    force_pairs
 };
 
 int main() {
