@@ -12,7 +12,8 @@ const vector<pair<string, string>> cueCards = {
     {"What is free fall?", "Free fall is when an object experiences no forces acting on it except for gravity"},
     {"What is terminal velocity?", "Terminal velocity is the speed an object travels at where the force of air resistance is equal to the force of gravity.\nOnce an object reaches terminal velocity, it will not accelerate or decelerate unless its cross-sectional surface area changes"},
     {"What is a projectile?", "A projectile is an object given an initial thrust and then allowed to soar through the air under the influence of gravity alone"},
-    {"What is the definition for the range of a projectile?", "The horizontal displacement of the projectile"}
+    {"What is the definition for the range of a projectile?", "The horizontal displacement of the projectile"},
+    {"What is translational equilibrium?", "An object is in translational equilibrium if the net force acting on it is 0"}
 };
 
 void pickCueCard() {
