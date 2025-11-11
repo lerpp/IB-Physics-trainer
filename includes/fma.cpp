@@ -18,12 +18,12 @@ void fma() {
         checkAnswerD(ans, force);
     }
     else if (whichone == 1) {
-        cout << "An object with mass " << mass << "kg experiences a net force of " << force << " N\nFind the acceleration of the object";
+        cout << "An object with mass " << mass << "kg experiences a net force of " << force << " N\nFind the acceleration of the object\n";
         double ans; cin >> ans;
         checkAnswerD(ans, acceleration);
     }
     else {
-        cout << "An object experiences a net force of " << force << "N and accelerates at " << acceleration << " m/s^2\nFind the mass of the object";
+        cout << "An object experiences a net force of " << force << "N and accelerates at " << acceleration << " m/s^2\nFind the mass of the object\n";
         double ans; cin >> ans;
         checkAnswerD(ans, mass);
     }
