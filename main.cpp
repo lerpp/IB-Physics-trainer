@@ -8,6 +8,8 @@
 #include "includes/graph_analysis.h"
 #include "includes/add_vectors.h"
 #include "includes/projectile_motion.h"
+#include "includes/fma.h"
+#include "includes/continue.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws;
 
@@ -17,7 +19,8 @@ const vector questions = {
     vdt,
     avt,
     addVector,
-    projectile_motion
+    projectile_motion,
+    fma
 };
 
 int main() {
@@ -25,7 +28,7 @@ int main() {
     while(true) {
         int activity = rand() % questions.size();
         questions[activity]();
-        string cont; getline(cin >> ws, cont);
+        next();
     }
     return 0;
 }
