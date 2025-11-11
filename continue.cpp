@@ -5,6 +5,7 @@
 using std::string, std::cin, std::cout, std::ws, std::getline;
 
 void next() {
-    cout << " (type a to continue)";
+    cout << "(type a to continue)";
     string cont; getline(cin >> ws, cont);
+
 }
