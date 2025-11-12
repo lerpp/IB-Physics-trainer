@@ -11,6 +11,7 @@
 #include "includes/fma.h"
 #include "includes/continue.h"
 #include "includes/force_pairs.h"
+#include "includes/friction.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws;
 
@@ -22,7 +23,9 @@ const vector questions = {
     addVector,
     projectile_motion,
     fma,
-    force_pairs
+    force_pairs,
+    sfriction,
+    kfriction
 };
 
 int main() {
