@@ -17,4 +17,12 @@ add_executable(ib_phys_tool main.cpp
         includes/add_vectors.cpp
         includes/add_vectors.h
         includes/projectile_motion.cpp
-        includes/projectile_motion.h)
+        includes/projectile_motion.h
+        includes/fma.cpp
+        includes/fma.h
+        includes/continue.cpp
+        includes/continue.h
+        includes/force_pairs.cpp
+        includes/force_pairs.h
+        includes/friction.cpp
+        includes/friction.h)
