@@ -27,4 +27,6 @@ add_executable(ib_phys_tool main.cpp
         includes/friction.cpp
         includes/friction.h
         includes/grav_attraction.cpp
-        includes/grav_attraction.h)
+        includes/grav_attraction.h
+        includes/spring_force.cpp
+        includes/spring_force.h)
