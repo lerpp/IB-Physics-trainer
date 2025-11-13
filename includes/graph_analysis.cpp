@@ -18,7 +18,19 @@ const vector<pair<string, vector<pair<string, string>>>> graphs = {
         {"the area under the graph", "displacement"}}},
     {"acceleration-time", {
         {"a point on the graph", "instantaneous acceleration"},
-        {"the area under the graph", "velocity"}}}
+        {"the area under the graph", "velocity"}}},
+    {"net force-acceleration (linear)", {
+        {"a point on the graph", "instantaneous net-force"},
+        {"slope of the graph", "mass of object"}}},
+    {"friction force-applied force", {
+        {"point on the graph", "instantaneous force of friction"},
+        {"sudden vertical drop", "maximum coefficient of static friction"},
+        {"slope of graph", "coefficient of static friction"},
+        {"height of flat part of graph", "coefficient of kinetic friction"}}},
+    {"spring force-displacement graph", {
+        {"point on the graph", "instantaneous spring force"},
+        {"slope of the graph", "spring constant"},
+        {"area under the graph", "spring energy"}}}
 };
 
 void analyzeGraph() {
