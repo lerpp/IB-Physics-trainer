@@ -12,6 +12,7 @@
 #include "includes/continue.h"
 #include "includes/force_pairs.h"
 #include "includes/friction.h"
+#include "includes/grav_attraction.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws;
 
@@ -25,7 +26,10 @@ const vector questions = {
     fma,
     force_pairs,
     sfriction,
-    kfriction
+    kfriction,
+    two_body_grav,
+    fm_grav_field,
+    grav_field
 };
 
 int main() {
