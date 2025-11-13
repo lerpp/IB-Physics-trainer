@@ -25,4 +25,6 @@ add_executable(ib_phys_tool main.cpp
         includes/force_pairs.cpp
         includes/force_pairs.h
         includes/friction.cpp
-        includes/friction.h)
+        includes/friction.h
+        includes/grav_attraction.cpp
+        includes/grav_attraction.h)
