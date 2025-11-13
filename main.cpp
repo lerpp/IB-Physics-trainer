@@ -14,6 +14,7 @@
 #include "includes/friction.h"
 #include "includes/grav_attraction.h"
 #include "includes/spring_force.h"
+#include "includes/connected_carts.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws;
 
@@ -31,7 +32,8 @@ const vector questions = {
     two_body_grav,
     fm_grav_field,
     grav_field,
-    spring_force
+    spring_force,
+    connected_carts
 };
 
 int main() {
