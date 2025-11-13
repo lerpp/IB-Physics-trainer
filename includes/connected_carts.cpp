@@ -22,7 +22,7 @@ void connected_carts() {
 
     cout << "Three carts are tied together by rope. Cart 1 is the furthest to the right and cart 3 is the furthest to the left\n";
 
-    int whichone = 10;
+    int whichone = rand() % 11;
     if (whichone == 0) {
         cout << "The masses of cart 1, 2, 3 are " << m1 << "kg, " << m2 << "kg, and " << m3 << "kg respectively\nThe coefficient of friction between the carts and the floor is " << mu << "\nA person pulls on cart 1 to the right with a force of " << fa << "N\nFind the tension in the rope between carts 1 and 2\n";
         double ans; cin >> ans;
