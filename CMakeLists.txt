@@ -29,4 +29,6 @@ add_executable(ib_phys_tool main.cpp
         includes/grav_attraction.cpp
         includes/grav_attraction.h
         includes/spring_force.cpp
-        includes/spring_force.h)
+        includes/spring_force.h
+        includes/connected_carts.cpp
+        includes/connected_carts.h)
