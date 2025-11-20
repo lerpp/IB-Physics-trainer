@@ -31,4 +31,6 @@ add_executable(ib_phys_tool main.cpp
         includes/spring_force.cpp
         includes/spring_force.h
         includes/connected_carts.cpp
-        includes/connected_carts.h)
+        includes/connected_carts.h
+        includes/hanging_weight_pulley.cpp
+        includes/hanging_weight_pulley.h)
