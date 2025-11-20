@@ -16,6 +16,7 @@
 #include "includes/spring_force.h"
 #include "includes/connected_carts.h"
 #include "includes/hanging_weight_pulley.h"
+#include "includes/wfd.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws;
 
@@ -36,7 +37,8 @@ const vector questions = {
     spring_force,
     connected_carts,
     hang_weight_pulley,
-    frict_hang_weight_pulley
+    frict_hang_weight_pulley,
+    wfdcos
 };
 
 int main() {
