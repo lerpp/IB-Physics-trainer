@@ -33,4 +33,6 @@ add_executable(ib_phys_tool main.cpp
         includes/connected_carts.cpp
         includes/connected_carts.h
         includes/hanging_weight_pulley.cpp
-        includes/hanging_weight_pulley.h)
+        includes/hanging_weight_pulley.h
+        includes/wfd.cpp
+        includes/wfd.h)
