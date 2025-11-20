@@ -24,7 +24,7 @@ const vector<pair<string, string>> cueCards = {
     {"What is the derived unit for the spring constant?", "The spring constant describes how much force it takes to displace a spring by one meter\nIts SI derived unit is N/m"},
     {"What is the definition of work?" , "Work is the transfer of energy"},
     {"What is the definition of energy?", "Energy is the abiility to do work"},
-    {"What is the derived SI unit for the joule? (when used for work)", "A Joule is the amount of work done by a 1N force for 1m\nTherefore its SI unit is N/m"}
+    {"What is the derived SI unit for the joule? (when used for work)", "A Joule is the amount of work done by a 1N force for 1m\nTherefore its SI unit is Nm"}
 };
 
 void pickCueCard() {
