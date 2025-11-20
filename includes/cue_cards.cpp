@@ -21,7 +21,9 @@ const vector<pair<string, string>> cueCards = {
     {"What is Newton's second law of motion?", "An unbalanced force on an object will cause it to accelerate uniformly in the direction of the force"},
     {"What is Newton's third law of motion?", "For every action force, there is an equal reaction force in the opposite direction"},
     {"What is the unit for the coefficient of friction?", "Trick question! There is no unit (hinted at by the description: coefficient)"},
-    {"What is the derived unit for the spring constant?", "The spring constant describes how much force it takes to displace a spring by one meter\nIts SI derived unit is N/m"}
+    {"What is the derived unit for the spring constant?", "The spring constant describes how much force it takes to displace a spring by one meter\nIts SI derived unit is N/m"},
+    {"What is the definition of work?" , "Work is the transfer of energy"},
+    {"What is the definition of energy?", "Energy is the abiility to do work"}
 };
 
 void pickCueCard() {
