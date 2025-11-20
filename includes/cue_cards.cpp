@@ -23,8 +23,12 @@ const vector<pair<string, string>> cueCards = {
     {"What is the unit for the coefficient of friction?", "Trick question! There is no unit (hinted at by the description: coefficient)"},
     {"What is the derived unit for the spring constant?", "The spring constant describes how much force it takes to displace a spring by one meter\nIts SI derived unit is N/m"},
     {"What is the definition of work?" , "Work is the transfer of energy"},
-    {"What is the definition of energy?", "Energy is the abiility to do work"},
-    {"What is the derived SI unit for the joule? (when used for work)", "A Joule is the amount of work done by a 1N force for 1m\nTherefore its SI unit is Nm"}
+    {"What is the definition of energy?", "Energy is the ability to do work"},
+    {"What is the derived SI unit for the joule? (when used for work)", "A Joule is the amount of work done by a 1N force for 1m\nTherefore its SI unit is Nm"},
+    {"How is it possible for negative work to be done?", "Work is proportional to force and displacement\nWhen the object is displaced in the opposite direction as the force, negative work is done (e.g. friction)"},
+    {"What is kinetic energy?", "Kinetic energy is energy possessed by an object due to its speed"},
+    {"What is potential energy?", "Potential energy is energy possessed by an object in relation to its position relative to forces in its environment"},
+    {"What is gravitational potential energy?", "Gravitational potential energy (GPE) is energy possessed by an object due to its position relative to the surface of the Earth"}
 };
 
 void pickCueCard() {
