@@ -35,4 +35,7 @@ add_executable(ib_phys_tool main.cpp
         includes/hanging_weight_pulley.cpp
         includes/hanging_weight_pulley.h
         includes/wfd.cpp
-        includes/wfd.h)
+        includes/wfd.h
+        includes/mech_energy.cpp
+        includes/mech_energy.h
+)
