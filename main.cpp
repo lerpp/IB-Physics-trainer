@@ -17,6 +17,7 @@
 #include "includes/connected_carts.h"
 #include "includes/hanging_weight_pulley.h"
 #include "includes/wfd.h"
+#include "includes/mech_energy.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws;
 
@@ -38,7 +39,10 @@ const vector questions = {
     connected_carts,
     hang_weight_pulley,
     frict_hang_weight_pulley,
-    wfdcos
+    wfdcos,
+    kinetic_en,
+    grav_potential_en,
+    spring_en
 };
 
 int main() {
