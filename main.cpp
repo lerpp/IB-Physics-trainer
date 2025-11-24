@@ -18,6 +18,7 @@
 #include "includes/hanging_weight_pulley.h"
 #include "includes/wfd.h"
 #include "includes/mech_energy.h"
+#include "includes/power.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws;
 
@@ -43,7 +44,10 @@ const vector questions = {
     kinetic_en,
     grav_potential_en,
     spring_en,
-    pick_question
+    pick_question,
+    pwt,
+    pfv,
+    crane_lift_block
 };
 
 int main() {
