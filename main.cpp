@@ -19,6 +19,8 @@
 #include "includes/wfd.h"
 #include "includes/mech_energy.h"
 #include "includes/power.h"
+#include "includes/energy_types.h"
+#include "includes/efficiency.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws;
 
@@ -47,7 +49,9 @@ const vector questions = {
     pick_question,
     pwt,
     pfv,
-    crane_lift_block
+    crane_lift_block,
+    choose_energy,
+    efficiency
 };
 
 int main() {
