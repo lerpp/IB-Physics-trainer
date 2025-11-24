@@ -40,4 +40,6 @@ add_executable(ib_phys_tool main.cpp
         includes/mech_energy.h
         includes/power.cpp
         includes/power.h
+        includes/energy_types.cpp
+        includes/energy_types.h
 )
