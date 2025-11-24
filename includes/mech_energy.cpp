@@ -2,8 +2,9 @@
 #include <string>
 #include "mech_energy.h"
 #include "input_handling.h"
+#include <vector>
 
-using std::cin, std::cout, std::string;
+using std::cin, std::cout, std::string, std::vector, std::pair;
 
 constexpr double g = 9.8;
 
@@ -97,7 +98,7 @@ void spring_en() {
     double e1 = roundDouble(0.5 * k * x1 * x1, 3);
     double e2 = roundDouble(0.5 * k * x2 * x2, 3);
     double delta_e = roundDouble(e2 - e1, 3);
-    int whichone = 5;
+    int whichone = rand() % 6;
     if (whichone == 0) {
         cout << "A spring with spring constant " << k << " N/m is compressed by " << x1 << "m\nFind the energy in the spring\n";
         double ans; cin >> ans;
@@ -128,4 +129,19 @@ void spring_en() {
         double ans; cin >> ans;
         checkAnswerD(ans, k);
     }
+}
+
+const vector<pair<string, string>> mech_en_questions = {
+    {"An apple falls from a tree. Assuming negligible air resistance, compare the mechanical energy of the apple before and after it falls\nIs it: (increased/decreased/unchanged)", "unchanged"},
+    {"An apple falls from a tree. Is there work done on the apple?\n(yes/no)", "yes"},
+    {"A block is pulled up a slope at constant speed over a distance of 30m\nIs there work being done on the block?\n(yes/no)", "no"},
+    {"A block is pulled over a rough surface at constant speed for a distance of 30m\nIs there work being done on the block\n(yes/no)?", "no"},
+    {"A block slides across a rough surface. Is the mechanical energy of the block: (increasing/decreasing/unchanged)", "decreasing"}
+};
+
+void pick_question() {
+    auto [question, sol] = mech_en_questions[rand() % mech_en_questions.size()];
+    cout << question << '\n';
+    string ans; cin >> ans;
+    checkAnswerS(ans, sol);
 }
