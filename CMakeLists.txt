@@ -38,4 +38,6 @@ add_executable(ib_phys_tool main.cpp
         includes/wfd.h
         includes/mech_energy.cpp
         includes/mech_energy.h
+        includes/power.cpp
+        includes/power.h
 )
