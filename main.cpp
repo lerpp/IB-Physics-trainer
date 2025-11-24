@@ -42,7 +42,8 @@ const vector questions = {
     wfdcos,
     kinetic_en,
     grav_potential_en,
-    spring_en
+    spring_en,
+    pick_question
 };
 
 int main() {
