@@ -8,5 +8,6 @@
 void kinetic_en();
 void grav_potential_en();
 void spring_en();
+void pick_question();
 
 #endif //IB_PHYS_TOOL_MECH_ENERGY_H
