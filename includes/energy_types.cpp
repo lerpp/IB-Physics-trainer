@@ -1,8 +1,7 @@
 #include <iostream>
-#include <string>,
+#include <string>
 #include <vector>
 #include "energy_types.h"
-#include "input_handling.h"
 #include "continue.h"
 
 using std::cin, std::cout, std::string, std::vector, std::pair;
