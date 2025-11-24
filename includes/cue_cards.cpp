@@ -28,7 +28,9 @@ const vector<pair<string, string>> cueCards = {
     {"How is it possible for negative work to be done?", "Work is proportional to force and displacement\nWhen the object is displaced in the opposite direction as the force, negative work is done (e.g. friction)"},
     {"What is kinetic energy?", "Kinetic energy is energy possessed by an object due to its speed"},
     {"What is potential energy?", "Potential energy is energy possessed by an object in relation to its position relative to forces in its environment"},
-    {"What is gravitational potential energy?", "Gravitational potential energy (GPE) is energy possessed by an object due to its position relative to the surface of the Earth"}
+    {"What is gravitational potential energy?", "Gravitational potential energy (GPE) is energy possessed by an object due to its position relative to the surface of the Earth"},
+    {"What is power?", "Power is the measure of how quickly something does work or converts energy into another form of energy"},
+    {"What is the SI unit for power?", "Power is measured in J/s"}
 };
 
 void pickCueCard() {
