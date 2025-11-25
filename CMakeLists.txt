@@ -44,4 +44,6 @@ add_executable(ib_phys_tool main.cpp
         includes/energy_types.h
         includes/efficiency.cpp
         includes/efficiency.h
+        includes/heat_capacity.cpp
+        includes/heat_capacity.h
 )
