@@ -48,4 +48,6 @@ add_executable(ib_phys_tool main.cpp
         includes/heat_capacity.h
         includes/latent_heat.cpp
         includes/latent_heat.h
+        includes/calorimeter.cpp
+        includes/calorimeter.h
 )
