@@ -44,7 +44,12 @@ const vector<pair<string, string>> cueCards = {
     {"What is charge? What is its unit?", "Charge is a measure of how many electrons there are\nIt is measured in coulombs (C)\nOne coulomb is equal to 6.2e18 electrons"},
     {"What is an ammeter?", "An ammeter is a device used to measure current\nIt is connected in series within an active circuit"},
     {"What is a voltmeter?", "A voltmeter is a device used to measure voltage across two points\nIt is connected in parallel, attached to two different points"},
-    {"What is an ohmmeter?", "An ohmmeter is a device used to measure electrical resistance\nIt is connected in parallel in an inactive circuit"}
+    {"What is an ohmmeter?", "An ohmmeter is a device used to measure electrical resistance\nIt is connected in parallel in an inactive circuit"},
+    {"What is the difference between direct and alternating current?", "In direct current, electrons only move in one direction\nIn alternating current, electrons oscillate between two opposite directions"},
+    {"What is the difference between conventional and electron current flow?", "Conventional current flow travels from the positive terminal to the negative terminal of a power source\nElectron current flow travels from the negative terminal to the positive terminal"},
+    {"What is voltage?", "Voltage is the difference in potential across a part of a circuit\nWhen work is done by the current, the voltage drops"},
+    {"What is electrical resistance?", "Electrical resistance is the amount of opposition received by the flor of the current of electricity\nResistance creates drops in voltage and produces heat as a result of collisions between the flowing electrons and the particles within the resistor"},
+    {"What is resistivity?", "Resistivity is a measure of how much a substance resists electric current, and is proportional to resistance"}
 };
 
 void pickCueCard() {
