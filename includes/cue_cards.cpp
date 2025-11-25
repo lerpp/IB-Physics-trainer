@@ -36,7 +36,15 @@ const vector<pair<string, string>> cueCards = {
     {"What is specific heat capacity?", "Specific heat capacity is the amount of heat required to heat 1kg of a substance by 1 degree Celsius\nIts unit is J/(kg * C)"},
     {"What is specific latent heat?", "Specific latent heat is the amount of heat required for 1kg of a substance to change states\nSpecific latent heat of fusion is to change states from liquid to solid or vice versa\nSpecific latent heat of vaporization is to change states from liquid to gas or vice versa"},
     {"What is thermal equilibrium?", "Thermal equilibrium occurs when there is no thermal flow between two objects"},
-    {"What is a calorimeter?", "A calorimeter measures change in thermal energy/entropy by surrounding a reaction/object with a medium, like water\nSince the mass/volume of the water is known, calculating the change in thermal energy is easy"}
+    {"What is a calorimeter?", "A calorimeter measures change in thermal energy/entropy by surrounding a reaction/object with a medium, like water\nSince the mass/volume of the water is known, calculating the change in thermal energy is easy"},
+    {"What is an electroscope?", "An electroscope is a device used to measure the change of an object\nIt has a knob on the top and two metal leaves within a chamber"},
+    {"What is static electricity?", "Static electricity arises from an imbalance of charge along the surface of an object"},
+    {"What is current electricity?", "Current electricity occurs when electrons flow freely and transfer their energy"},
+    {"What is electrical current? What is its unit?", "Current is defined as the number of charges (electrons) moving through a point per second\nIt is measured in Amperes (A), which is equal to coulombs per second (C/s)"},
+    {"What is charge? What is its unit?", "Charge is a measure of how many electrons there are\nIt is measured in coulombs (C)\nOne coulomb is equal to 6.2e18 electrons"},
+    {"What is an ammeter?", "An ammeter is a device used to measure current\nIt is connected in series within an active circuit"},
+    {"What is a voltmeter?", "A voltmeter is a device used to measure voltage across two points\nIt is connected in parallel, attached to two different points"},
+    {"What is an ohmmeter?", "An ohmmeter is a device used to measure electrical resistance\nIt is connected in parallel in an inactive circuit"}
 };
 
 void pickCueCard() {
