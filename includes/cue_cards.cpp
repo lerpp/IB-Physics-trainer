@@ -30,7 +30,13 @@ const vector<pair<string, string>> cueCards = {
     {"What is potential energy?", "Potential energy is energy possessed by an object in relation to its position relative to forces in its environment"},
     {"What is gravitational potential energy?", "Gravitational potential energy (GPE) is energy possessed by an object due to its position relative to the surface of the Earth"},
     {"What is power?", "Power is the measure of how quickly something does work or converts energy into another form of energy"},
-    {"What is the SI unit for power?", "Power is measured in J/s"}
+    {"What is the SI unit for power?", "Power is measured in J/s"},
+    {"What is the definition of power efficiency?", "Efficiency is the percent of energy put into a system which is outputted as useful energy"},
+    {"What is the difference between temperature, thermal energy, and heat?", "Temperature is the average kinetic energy of the particles in a substance\nThermal energy is the total chemical & potential energy in a substance\nHeat is the amount of thermal energy being transferred from a hot object to a cooler one"},
+    {"What is specific heat capacity?", "Specific heat capacity is the amount of heat required to heat 1kg of a substance by 1 degree Celsius\nIts unit is J/(kg * C)"},
+    {"What is specific latent heat?", "Specific latent heat is the amount of heat required for 1kg of a substance to change states\nSpecific latent heat of fusion is to change states from liquid to solid or vice versa\nSpecific latent heat of vaporization is to change states from liquid to gas or vice versa"},
+    {"What is thermal equilibrium?", "Thermal equilibrium occurs when there is no thermal flow between two objects"},
+    {"What is a calorimeter?", "A calorimeter measures change in thermal energy/entropy by surrounding a reaction/object with a medium, like water\nSince the mass/volume of the water is known, calculating the change in thermal energy is easy"}
 };
 
 void pickCueCard() {
