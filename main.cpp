@@ -23,6 +23,7 @@
 #include "includes/efficiency.h"
 #include "includes/heat_capacity.h"
 #include "includes/latent_heat.h"
+#include "includes/calorimeter.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws;
 
@@ -55,7 +56,8 @@ const vector questions = {
     choose_energy,
     efficiency,
     heat_cap,
-    latent_heat
+    latent_heat,
+    calorimeter
 };
 
 int main() {
