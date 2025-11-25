@@ -22,6 +22,7 @@
 #include "includes/energy_types.h"
 #include "includes/efficiency.h"
 #include "includes/heat_capacity.h"
+#include "includes/latent_heat.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws;
 
@@ -53,7 +54,8 @@ const vector questions = {
     crane_lift_block,
     choose_energy,
     efficiency,
-    heat_cap
+    heat_cap,
+    latent_heat
 };
 
 int main() {
