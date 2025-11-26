@@ -24,6 +24,11 @@
 #include "includes/heat_capacity.h"
 #include "includes/latent_heat.h"
 #include "includes/calorimeter.h"
+#include "includes/iqt.h"
+#include "includes/veq.h"
+#include "includes/evit.h"
+#include "includes/material_resistance.h"
+#include "includes/ohms_law.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws, std::pair;
 
@@ -57,7 +62,12 @@ const vector all_questions = {
     efficiency,
     heat_cap,
     latent_heat,
-    calorimeter
+    calorimeter,
+    iqt,
+    veq,
+    evit,
+    mat_resist,
+    ohms_law
 };
 
 const vector cards = {pickCueCard};
@@ -100,13 +110,22 @@ const vector energy = {
     calorimeter
 };
 
+const vector electricity = {
+    iqt,
+    veq,
+    evit,
+    mat_resist,
+    ohms_law
+};
+
 const vector<pair<vector<void(*)()>, string>> units = {
     {cards, "Cue cards"},
     {graphs, "Graph analysis"},
     {kinematics, "Kinematics"},
     {dynamics, "Dynamics"},
     {energy, "Energy"},
-    {all_questions, "Everything"}
+    {electricity, "Electricity"},
+    {all_questions, "Everything"},
 };
 
 int main() {
