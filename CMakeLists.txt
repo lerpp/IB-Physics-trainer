@@ -50,4 +50,14 @@ add_executable(ib_phys_tool main.cpp
         includes/latent_heat.h
         includes/calorimeter.cpp
         includes/calorimeter.h
+        includes/iqt.cpp
+        includes/iqt.h
+        includes/veq.cpp
+        includes/veq.h
+        includes/evit.cpp
+        includes/evit.h
+        includes/material_resistance.cpp
+        includes/material_resistance.h
+        includes/ohms_law.cpp
+        includes/ohms_law.h
 )
