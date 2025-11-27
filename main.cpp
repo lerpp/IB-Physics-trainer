@@ -67,7 +67,10 @@ const vector all_questions = {
     veq,
     evit,
     mat_resist,
-    ohms_law
+    ohms_law,
+    piv,
+    pir,
+    pvr
 };
 
 const vector cards = {pickCueCard};
@@ -115,7 +118,10 @@ const vector electricity = {
     veq,
     evit,
     mat_resist,
-    ohms_law
+    ohms_law,
+    pir,
+    pvr,
+    piv
 };
 
 const vector<pair<vector<void(*)()>, string>> units = {
