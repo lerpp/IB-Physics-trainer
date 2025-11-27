@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <windows.h>
 #include "power.h"
 #include "input_handling.h"
 
@@ -71,5 +72,73 @@ void crane_lift_block() {
         cout << "A crane can lift a block with mass " << m << "kg at a maximum speed of " << v << " m/s\nFind the power of the crane\n";
         double ans; cin >> ans;
         checkAnswerD(ans, p);
+    }
+}
+
+void piv() {
+    double i = rand() % 1000 / 100.0;
+    double v = rand() % 1000 / 10.0;
+    double p = roundDouble(i * v, 3);
+    int whichone = rand() % 3;
+    if (whichone == 0) {
+        cout << "The voltage across a heater is measured to be " << v << " V\nThe heater has " << i << " A of current running through it\nFind the power of the heater\n";
+        double ans; cin >> ans;
+        checkAnswerD(ans, p);
+    }
+    else if (whichone == 1) {
+        cout << "The voltage across a heater is measured to be " << v << " V\nThe power of the heater is " << p << " W\nFind the current running through the heater\n";
+        double ans; cin >> ans;
+        checkAnswerD(ans, i);
+    }
+    else {
+        cout << "A heater with power " << p << " W has " << i << " A of current running through it\nFind the voltage across the heater\n";
+        double ans; cin >> ans;
+        checkAnswerD(ans, v);
+    }
+}
+
+void pir() {
+    SetConsoleOutputCP(CP_UTF8);
+    double i = rand() % 1000 / 100.0;
+    double r = rand() % 1000 / 10.0;
+    double p = roundDouble(i * i * r, 3);
+    int whichone = rand() % 3;
+    if (whichone == 0) {
+        cout << "The resistance of a heater is measured to be " << r << " Ω\nThe heater has " << i << " A of current running through it\nFind the power of the heater\n";
+        double ans; cin >> ans;
+        checkAnswerD(ans, p);
+    }
+    else if (whichone == 1) {
+        cout << "The resistance of a heater is measured to be " << r << " Ω\nThe power of the heater is " << p << " W\nFind the current running through the heater\n";
+        double ans; cin >> ans;
+        checkAnswerD(ans, i);
+    }
+    else {
+        cout << "A heater with power " << p << " W has " << i << " A of current running through it\nFind the resistance of the heater\n";
+        double ans; cin >> ans;
+        checkAnswerD(ans, r);
+    }
+}
+
+void pvr() {
+    SetConsoleOutputCP(CP_UTF8);
+    double r = rand() % 1000 / 100.0;
+    double v = rand() % 1000 / 10.0;
+    double p = roundDouble(v * v / r, 3);
+    int whichone = rand() % 3;
+    if (whichone == 0) {
+        cout << "The voltage across a heater is measured to be " << v << " V\nThe heater has " << r << " Ω of resistance\nFind the power of the heater\n";
+        double ans; cin >> ans;
+        checkAnswerD(ans, p);
+    }
+    else if (whichone == 1) {
+        cout << "The voltage across a heater is measured to be " << v << " V\nThe power of the heater is " << p << " W\nFind the resistance of the heater\n";
+        double ans; cin >> ans;
+        checkAnswerD(ans, r);
+    }
+    else {
+        cout << "A heater with power " << p << " W has " << r << " Ω of current running through it\nFind the voltage across the heater\n";
+        double ans; cin >> ans;
+        checkAnswerD(ans, v);
     }
 }
