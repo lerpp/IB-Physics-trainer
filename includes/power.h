@@ -8,5 +8,8 @@
 void pfv();
 void pwt();
 void crane_lift_block();
+void piv();
+void pir();
+void pvr();
 
 #endif //IB_PHYS_TOOL_POWER_H
