@@ -60,4 +60,6 @@ add_executable(ib_phys_tool main.cpp
         includes/material_resistance.h
         includes/ohms_law.cpp
         includes/ohms_law.h
+        includes/circuit_analysis.cpp
+        includes/circuit_analysis.h
 )
