@@ -29,6 +29,7 @@
 #include "includes/evit.h"
 #include "includes/material_resistance.h"
 #include "includes/ohms_law.h"
+#include "includes/circuit_analysis.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws, std::pair;
 
@@ -70,7 +71,8 @@ const vector all_questions = {
     ohms_law,
     piv,
     pir,
-    pvr
+    pvr,
+    circuit_analysis
 };
 
 const vector cards = {pickCueCard};
@@ -121,7 +123,8 @@ const vector electricity = {
     ohms_law,
     pir,
     pvr,
-    piv
+    piv,
+    circuit_analysis
 };
 
 const vector<pair<vector<void(*)()>, string>> units = {
