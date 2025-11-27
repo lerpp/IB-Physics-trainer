@@ -11,5 +11,6 @@ void checkAnswerI(const int &input, const int &solution);
 void checkAnswerS(const string &input, const string &solution);
 
 string doubleToString(double value);
+string spacePadding(double d, int len);
 
 #endif
