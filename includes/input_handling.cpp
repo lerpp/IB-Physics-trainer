@@ -4,7 +4,7 @@
 #include <sstream>
 #include "input_handling.h"
 
-using std::stringstream, std::scientific, std::setprecision, std::cout, std::ostringstream;
+using std::stringstream, std::scientific, std::setprecision, std::cout, std::ostringstream, std::to_string;
 
 double roundDouble( double x, int n ) {
     stringstream ss;
@@ -31,4 +31,10 @@ string doubleToString(double value) {
     ostringstream oss;
     oss << value;
     return oss.str();
+}
+
+string spacePadding(const double d, int len) {
+    string s = doubleToString(d);
+    while (s.length() < len) s = " " + s;
+    return s;
 }
