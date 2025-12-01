@@ -49,7 +49,12 @@ const vector<pair<string, string>> cueCards = {
     {"What is the difference between conventional and electron current flow?", "Conventional current flow travels from the positive terminal to the negative terminal of a power source\nElectron current flow travels from the negative terminal to the positive terminal"},
     {"What is voltage?", "Voltage is the difference in potential across a part of a circuit\nWhen work is done by the current, the voltage drops"},
     {"What is electrical resistance?", "Electrical resistance is the amount of opposition received by the flor of the current of electricity\nResistance creates drops in voltage and produces heat as a result of collisions between the flowing electrons and the particles within the resistor"},
-    {"What is resistivity?", "Resistivity is a measure of how much a substance resists electric current, and is proportional to resistance"}
+    {"What is resistivity?", "Resistivity is a measure of how much a substance resists electric current, and is proportional to resistance"},
+    {"What is Kirchhoff's current law?", "Across a series circuit, current is constant\nAcross a parallel circuit, current in equals current out at a junction"},
+    {"What is Kirchhoff's voltage law?", "Across a series circuit, the sum of the voltage changes is 0\nAcross a parllel circuit, every load has the same voltage\n"},
+    {"What is the difference between equivalent resistance in a series and parllel circuit?", "In a series circuit, equivalent resistance is equal to the sum of individual resistances\nIn a parllel circuit, the reciprocal of the equivalent resistance is equal to the sum of the reciprocals of the individual resistances"},
+    {"What is a magnetic field?", "A magnetic field is a 3D space surrounding a magnetic which exerts a force on magnetic objects"},
+    {"In which direction do field lines of a magnetic field point?", "Field lines point from the north pole to the south pole outside of the magnet, and from the south pole to the north pole inside the magnet\nThey are closer together where the magnetic field is stronger"}
 };
 
 void pickCueCard() {
