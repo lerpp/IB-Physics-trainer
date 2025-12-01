@@ -72,7 +72,8 @@ const vector all_questions = {
     piv,
     pir,
     pvr,
-    circuit_analysis
+    circuit_analysis,
+    circuit_current_analysis
 };
 
 const vector cards = {pickCueCard};
@@ -124,7 +125,8 @@ const vector electricity = {
     pir,
     pvr,
     piv,
-    circuit_analysis
+    circuit_analysis,
+    circuit_current_analysis
 };
 
 const vector<pair<vector<void(*)()>, string>> units = {
