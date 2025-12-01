@@ -157,17 +157,79 @@ void circuit_analysis() {
     }
 }
 
+vector<pair<string, vector<double>>> circuit_current = {
+    {
+        R"(
+                            |    3V
+____________________________||________________________
+|                           ||                       |
+|                           |                        |
+|                                                    |
+|                20Ω                   30Ω           |
+|_____________/\/\/\/\/\___________/\/\/\/\/\________|
+|                 R1                    R2           |
+|                                                    |
+|                                                    |
+|              |                      10Ω            |
+|______________||__________________/\/\/\/\/\________|
+               ||                       R3
+               |   2V
+)",
+       {0.06, 0.06, 0.1}
+    },
+    {
+R"(
+                          9.0V
+             4.0Ω       |
+__________/\/\/\/\/\____||____________________________
+|             R1        ||                           |
+|                       |                            |
+|                                                    |
+|                        |  3.0V                     |
+|_______________________||___________________________|
+|                       ||                           |
+|                        |                           |
+|                                                    |
+|             2.0Ω                 3.0Ω              |
+|_________/\/\/\/\/\____________/\/\/\/\/\___________|
+              R2                    R3
+)",
+        {3, 0.6, 0.6}
+    },
+    {
+R"(
+            2Ω                    3Ω
+  ______/\/\/\/\/\____________/\/\/\/\/\______
+  |          R1         |           R2       |
+  |                     |                    |
+  |                     |                    |
+  |                     \                    |
+  |                R3   /   5Ω               |
+----- 9V                \                  -----  2V
+ ---                    /                   ---
+  |                     |                    |
+  |                     |                    |
+  |                     |                    |
+  |_____________________|____________________|
 
 
+)",
+        {2, 1, 1}
+    }
+};
 
-
-
-
-
-
-
-
-
-
-
-
+void circuit_current_analysis() {
+    SetConsoleOutputCP(CP_UTF8);
+    auto [circuit, solution] = circuit_current[rand() % circuit_current.size()];
+    cout << "Solve for the current through each resistor in the following circuit\n(Include your answer as a list of space separated number for resistor 1, resistor 2, etc.\n";
+    cout << circuit;
+    vector<double> ans(solution.size());
+    for (int i = 0; i < solution.size(); i++)
+        cin >> ans[i];
+    if (ans == solution) cout << "Correct!\n";
+    else {
+        cout << "Wrong! The correct answer is\n";
+        for (const auto &i : solution) cout << spacePadding(i, 5) << " ";
+        cout << '\n';
+    }
+}
