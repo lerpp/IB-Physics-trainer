@@ -22,6 +22,10 @@ vector<pair<string, string>> dc_motor_questions = {
     {
         "How does the improved DC motor work?",
         "By RHR 2, the coiled conductor has a north and south pole. The north pole of the solenoid repels the north pole of the external magnetic field, spinning the solenoid\nWhen the split in the split-ring commutator reaches the brush, the current is broken. The solenoid spins due to inertia\nAs the split-ring commutator spins around to the other brush, the current in the solenoid reverses, keeping it spinning"
+    },
+    {
+        "What is the purpose of the split-ring commutator?",
+        "The split in the split-ring commutator changes the direction of the current, which changes the polarity/force of the loop/solenoid"
     }
 };
 
