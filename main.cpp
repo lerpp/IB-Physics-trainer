@@ -30,6 +30,7 @@
 #include "includes/material_resistance.h"
 #include "includes/ohms_law.h"
 #include "includes/circuit_analysis.h"
+#include "includes/dc_motor.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws, std::pair;
 
@@ -73,7 +74,8 @@ const vector all_questions = {
     pir,
     pvr,
     circuit_analysis,
-    circuit_current_analysis
+    circuit_current_analysis,
+    dc_motor_quiz
 };
 
 const vector cards = {pickCueCard};
@@ -116,7 +118,7 @@ const vector energy = {
     calorimeter
 };
 
-const vector electricity = {
+const vector electromagnetism = {
     iqt,
     veq,
     evit,
@@ -126,7 +128,8 @@ const vector electricity = {
     pvr,
     piv,
     circuit_analysis,
-    circuit_current_analysis
+    circuit_current_analysis,
+    dc_motor_quiz
 };
 
 const vector<pair<vector<void(*)()>, string>> units = {
@@ -135,7 +138,7 @@ const vector<pair<vector<void(*)()>, string>> units = {
     {kinematics, "Kinematics"},
     {dynamics, "Dynamics"},
     {energy, "Energy"},
-    {electricity, "Electricity"},
+    {electromagnetism, "Electromagnetism"},
     {all_questions, "Everything"},
 };
 
