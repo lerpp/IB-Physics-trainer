@@ -31,6 +31,7 @@
 #include "includes/ohms_law.h"
 #include "includes/circuit_analysis.h"
 #include "includes/dc_motor.h"
+#include "includes/electromotive_force.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws, std::pair;
 
@@ -75,7 +76,10 @@ const vector all_questions = {
     pvr,
     circuit_analysis,
     circuit_current_analysis,
-    dc_motor_quiz
+    dc_motor_quiz,
+    emf_w,
+    emf_p,
+    internal_resistance
 };
 
 const vector cards = {pickCueCard};
@@ -129,7 +133,10 @@ const vector electromagnetism = {
     piv,
     circuit_analysis,
     circuit_current_analysis,
-    dc_motor_quiz
+    dc_motor_quiz,
+    emf_w,
+    emf_p,
+    internal_resistance
 };
 
 const vector<pair<vector<void(*)()>, string>> units = {
