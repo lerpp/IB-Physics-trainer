@@ -30,7 +30,14 @@ const vector<pair<string, vector<pair<string, string>>>> graphs = {
     {"spring force-displacement graph", {
         {"point on the graph", "instantaneous spring force"},
         {"slope of the graph", "spring constant"},
-        {"area under the graph", "spring energy"}}}
+        {"area under the graph", "spring energy"}}},
+    {"force-displacement graph", {
+    {"point on the graph", "instantaneous force"},
+    {"area under the graph", "total work done"}}},
+    {"voltage-current on a battery", {
+        {"slope of the graph", "internal resistance"},
+        {"y-intercept", "electromotive force of the battery"}
+    }}
 };
 
 void analyzeGraph() {
