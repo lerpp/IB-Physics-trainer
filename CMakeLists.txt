@@ -64,4 +64,6 @@ add_executable(ib_phys_tool main.cpp
         includes/circuit_analysis.h
         includes/dc_motor.cpp
         includes/dc_motor.h
+        includes/electromotive_force.cpp
+        includes/electromotive_force.h
 )
