@@ -32,6 +32,7 @@
 #include "includes/circuit_analysis.h"
 #include "includes/dc_motor.h"
 #include "includes/electromotive_force.h"
+#include "includes/transformer_coils.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws, std::pair;
 
@@ -79,7 +80,8 @@ const vector all_questions = {
     dc_motor_quiz,
     emf_w,
     emf_p,
-    internal_resistance
+    internal_resistance,
+    solve_transformer_coils
 };
 
 const vector cards = {pickCueCard};
@@ -136,7 +138,8 @@ const vector electromagnetism = {
     dc_motor_quiz,
     emf_w,
     emf_p,
-    internal_resistance
+    internal_resistance,
+    solve_transformer_coils
 };
 
 const vector<pair<vector<void(*)()>, string>> units = {
