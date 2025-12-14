@@ -66,4 +66,6 @@ add_executable(ib_phys_tool main.cpp
         includes/dc_motor.h
         includes/electromotive_force.cpp
         includes/electromotive_force.h
+        includes/transformer_coils.cpp
+        includes/transformer_coils.h
 )
