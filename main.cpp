@@ -33,6 +33,7 @@
 #include "includes/dc_motor.h"
 #include "includes/electromotive_force.h"
 #include "includes/transformer_coils.h"
+#include "includes/wave_speed.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws, std::pair;
 
@@ -81,7 +82,8 @@ const vector all_questions = {
     emf_w,
     emf_p,
     internal_resistance,
-    solve_transformer_coils
+    solve_transformer_coils,
+    wave_speed
 };
 
 const vector cards = {pickCueCard};
@@ -142,6 +144,10 @@ const vector electromagnetism = {
     solve_transformer_coils
 };
 
+const vector waves = {
+    wave_speed
+};
+
 const vector<pair<vector<void(*)()>, string>> units = {
     {cards, "Cue cards"},
     {graphs, "Graph analysis"},
@@ -149,6 +155,7 @@ const vector<pair<vector<void(*)()>, string>> units = {
     {dynamics, "Dynamics"},
     {energy, "Energy"},
     {electromagnetism, "Electromagnetism"},
+    {waves, "Waves"},
     {all_questions, "Everything"},
 };
 
