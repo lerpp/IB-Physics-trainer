@@ -35,6 +35,7 @@
 #include "includes/transformer_coils.h"
 #include "includes/wave_speed.h"
 #include "includes/mach_num.h"
+#include "includes/wave_beats.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws, std::pair;
 
@@ -85,7 +86,8 @@ const vector all_questions = {
     internal_resistance,
     solve_transformer_coils,
     wave_speed,
-    mach
+    mach,
+    beats
 };
 
 const vector cards = {pickCueCard};
@@ -148,7 +150,8 @@ const vector electromagnetism = {
 
 const vector waves = {
     wave_speed,
-    mach
+    mach,
+    beats
 };
 
 const vector<pair<vector<void(*)()>, string>> units = {
