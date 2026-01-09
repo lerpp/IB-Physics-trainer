@@ -70,4 +70,6 @@ add_executable(ib_phys_tool main.cpp
         includes/transformer_coils.h
         includes/wave_speed.cpp
         includes/wave_speed.h
+        includes/mach_num.cpp
+        includes/mach_num.h
 )
