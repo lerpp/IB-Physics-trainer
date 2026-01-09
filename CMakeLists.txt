@@ -72,4 +72,6 @@ add_executable(ib_phys_tool main.cpp
         includes/wave_speed.h
         includes/mach_num.cpp
         includes/mach_num.h
+        includes/wave_beats.cpp
+        includes/wave_beats.h
 )
