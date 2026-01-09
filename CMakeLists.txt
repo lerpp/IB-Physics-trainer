@@ -68,4 +68,6 @@ add_executable(ib_phys_tool main.cpp
         includes/electromotive_force.h
         includes/transformer_coils.cpp
         includes/transformer_coils.h
+        includes/wave_speed.cpp
+        includes/wave_speed.h
 )
