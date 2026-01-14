@@ -6,5 +6,6 @@
 #define IB_PHYS_TOOL_CIRCUIT_ANALYSIS_H
 
 void circuit_analysis();
+void circuit_current_analysis();
 
 #endif //IB_PHYS_TOOL_CIRCUIT_ANALYSIS_H
