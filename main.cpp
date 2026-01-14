@@ -36,6 +36,7 @@
 #include "includes/wave_speed.h"
 #include "includes/mach_num.h"
 #include "includes/wave_beats.h"
+#include "includes/doppler.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws, std::pair;
 
@@ -87,7 +88,8 @@ const vector all_questions = {
     solve_transformer_coils,
     wave_speed,
     mach,
-    beats
+    beats,
+    doppler_moving_source
 };
 
 const vector cards = {pickCueCard};
@@ -151,7 +153,8 @@ const vector electromagnetism = {
 const vector waves = {
     wave_speed,
     mach,
-    beats
+    beats,
+    doppler_moving_source
 };
 
 const vector<pair<vector<void(*)()>, string>> units = {
