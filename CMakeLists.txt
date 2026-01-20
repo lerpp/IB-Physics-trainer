@@ -75,4 +75,10 @@ add_executable(ib_phys_tool main.cpp
         includes/wave_beats.cpp
         includes/wave_beats.h
         includes/doppler.cpp
+        includes/nucleus_charge.cpp
+        includes/nucleus_charge.h
+        includes/half_life.cpp
+        includes/half_life.h
+        includes/photon_energy.cpp
+        includes/photon_energy.h
 )

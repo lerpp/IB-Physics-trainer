@@ -37,6 +37,9 @@
 #include "includes/mach_num.h"
 #include "includes/wave_beats.h"
 #include "includes/doppler.h"
+#include "includes/nucleus_charge.h"
+#include "includes/half_life.h"
+#include "includes/photon_energy.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws, std::pair;
 
@@ -89,7 +92,10 @@ const vector all_questions = {
     wave_speed,
     mach,
     beats,
-    doppler_moving_source
+    doppler_moving_source,
+    nucleus_charge,
+    half_life,
+    photon_energy
 };
 
 const vector cards = {pickCueCard};
@@ -157,6 +163,12 @@ const vector waves = {
     doppler_moving_source
 };
 
+const vector nuclear = {
+    nucleus_charge,
+    half_life,
+    photon_energy
+};
+
 const vector<pair<vector<void(*)()>, string>> units = {
     {cards, "Cue cards"},
     {graphs, "Graph analysis"},
@@ -170,6 +182,7 @@ const vector<pair<vector<void(*)()>, string>> units = {
 
 int main() {
     srand(time(0));
+    photon_energy();
     cout << "Select your desired activity:\n";
     for (int i = 1; i <= units.size(); i++) {
         cout << units[i - 1].second << " (" << i << ")\n";
