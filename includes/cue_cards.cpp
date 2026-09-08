@@ -90,7 +90,10 @@ const vector<pair<string, string>> cueCards = {
     {"What is nuclear fission? What is a chain reaction? What is meant by the critical mass of a chain reaction?", "Nuclear fission occurs when a heavy element splits into several lighter ones, releasing energy\nFor example, uranium-235, upon absorbing an electron, may decompose into barium-144, krypton-89, and 3 neutrons\nChain reactions occur when the products of one fission reaction trigger several others\nIn the case of uranium fission, the emitted neutrons can cause more fission reactions\nThe amount of an element required to start a chain reaction is known as the critical mass\nBelow the critical mass, the neutrons will fly off without continuing the reaction"},
     {"What is nuclear fusion?", "Nuclear fusion occurs when two light atoms fuse into a larger atom, releasing energy"},
     {"What is the difference between the specific energy and energy density of a fuel?", "Specific energy is the energy of a fuel per unit mass\nEnergy density is the energy of a fuel per unit volume"},
-    {"What is a Sankey diagram?", "A Sankey diagram shows the flow of energy through a reactor, with arrow width proportional to the flow of the energy."}
+    {"What is a Sankey diagram?", "A Sankey diagram shows the flow of energy through a reactor, with arrow width proportional to the flow of the energy."},
+    {"What is a black body? What is black-body radiation?", "A black body is a body which absorbs all incoming EM waves at low temperatures and radiates all frequencies of EM at high temperatures. Black-body radiation is natural EM radiation which is radiated by the body due to temperature (think glowing-red coal, or glowing yellow stars)"},
+    {"What is albedo?", "Albedo is the ratio of scattered radiation to incident radiation, essentially describing how \'shiny\' something is"},
+    {"In the context of radiation and stars, what is the difference between intensity and apparent brightness?", "The formulae for both are identical because both describe the same thing: the amount of radiation from a source received per unit area on a target. Intensity describes all radiators, while apparent brightness describes stars only"}
 };
 
 void pickCueCard() {
