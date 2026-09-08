@@ -81,4 +81,8 @@ add_executable(ib_phys_tool main.cpp
         includes/half_life.h
         includes/photon_energy.cpp
         includes/photon_energy.h
+        includes/reactor_eqs.cpp
+        includes/reactor_eqs.h
+        includes/reactor_eqs.cpp
+        includes/reactor_eqs.h
 )

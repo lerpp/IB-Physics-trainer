@@ -40,6 +40,7 @@
 #include "includes/nucleus_charge.h"
 #include "includes/half_life.h"
 #include "includes/photon_energy.h"
+#include "includes/reactor_eqs.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws, std::pair;
 
@@ -95,7 +96,9 @@ const vector all_questions = {
     doppler_moving_source,
     nucleus_charge,
     half_life,
-    photon_energy
+    photon_energy,
+    hydroelec_power,
+    wind_turbine_power
 };
 
 const vector cards = {pickCueCard};
@@ -135,7 +138,9 @@ const vector energy = {
     efficiency,
     heat_cap,
     latent_heat,
-    calorimeter
+    calorimeter,
+    hydroelec_power,
+    wind_turbine_power
 };
 
 const vector electromagnetism = {
@@ -182,7 +187,6 @@ const vector<pair<vector<void(*)()>, string>> units = {
 
 int main() {
     srand(time(0));
-    photon_energy();
     cout << "Select your desired activity:\n";
     for (int i = 1; i <= units.size(); i++) {
         cout << units[i - 1].second << " (" << i << ")\n";

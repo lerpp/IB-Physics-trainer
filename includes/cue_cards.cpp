@@ -88,7 +88,9 @@ const vector<pair<string, string>> cueCards = {
     {"What is the binding energy of an atomic nucleus?", "Binding energy is the amount of energy/work required to break apart the nucleons of a nucleus\nIt can be calculated using the mass defect of the nucleus"},
     {"How is the binding energy per nucleon a rough measure of the stability of an atom?", "Higher binding energy per nucleon, more stable atom"},
     {"What is nuclear fission? What is a chain reaction? What is meant by the critical mass of a chain reaction?", "Nuclear fission occurs when a heavy element splits into several lighter ones, releasing energy\nFor example, uranium-235, upon absorbing an electron, may decompose into barium-144, krypton-89, and 3 neutrons\nChain reactions occur when the products of one fission reaction trigger several others\nIn the case of uranium fission, the emitted neutrons can cause more fission reactions\nThe amount of an element required to start a chain reaction is known as the critical mass\nBelow the critical mass, the neutrons will fly off without continuing the reaction"},
-    {"What is nuclear fusion?", "Nuclear fusion occurs when two light atoms fuse into a larger atom, releasing energy"}
+    {"What is nuclear fusion?", "Nuclear fusion occurs when two light atoms fuse into a larger atom, releasing energy"},
+    {"What is the difference between the specific energy and energy density of a fuel?", "Specific energy is the energy of a fuel per unit mass\nEnergy density is the energy of a fuel per unit volume"},
+    {"What is a Sankey diagram?", "A Sankey diagram shows the flow of energy through a reactor, with arrow width proportional to the flow of the energy."}
 };
 
 void pickCueCard() {
