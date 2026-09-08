@@ -41,6 +41,7 @@
 #include "includes/half_life.h"
 #include "includes/photon_energy.h"
 #include "includes/reactor_eqs.h"
+#include "includes/heat_transfer_rate.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws, std::pair;
 
@@ -98,7 +99,8 @@ const vector all_questions = {
     half_life,
     photon_energy,
     hydroelec_power,
-    wind_turbine_power
+    wind_turbine_power,
+    heat_transfer_rate
 };
 
 const vector cards = {pickCueCard};
@@ -140,7 +142,8 @@ const vector energy = {
     latent_heat,
     calorimeter,
     hydroelec_power,
-    wind_turbine_power
+    wind_turbine_power,
+    heat_transfer_rate
 };
 
 const vector electromagnetism = {

@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include "reactor_eqs.h"
-
 #include "input_handling.h"
 
 using std::cin, std::cout, std::string;

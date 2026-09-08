@@ -85,4 +85,7 @@ add_executable(ib_phys_tool main.cpp
         includes/reactor_eqs.h
         includes/reactor_eqs.cpp
         includes/reactor_eqs.h
+        includes/heat_transfer_rate.cpp
+        includes/heat_transfer_rate.h
+        includes/heat_transfer_rate.h
 )
