@@ -43,6 +43,7 @@
 #include "includes/energy/reactor_eqs.h"
 #include "includes/energy/heat_transfer_rate.h"
 #include "includes/space/blackbody_rad.h"
+#include "includes/space/wiens_law.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws, std::pair;
 
@@ -102,7 +103,8 @@ const vector all_questions = {
     hydroelec_power,
     wind_turbine_power,
     heat_transfer_rate,
-    bbody_rad
+    bbody_rad,
+    wiens_displacement_law
 };
 
 const vector cards = {pickCueCard};
@@ -180,7 +182,8 @@ const vector nuclear = {
 };
 
 const vector space = {
-    bbody_rad
+    bbody_rad,
+    wiens_displacement_law
 };
 
 const vector<pair<vector<void(*)()>, string>> units = {

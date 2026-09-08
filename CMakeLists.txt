@@ -50,4 +50,6 @@ add_executable(ib_phys_tool main.cpp
         includes/waves/mach_num.cpp
         includes/waves/wave_beats.cpp
         includes/waves/wave_speed.cpp
+        includes/space/wiens_law.cpp
+        includes/space/wiens_law.h
 )
