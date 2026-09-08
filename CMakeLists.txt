@@ -88,4 +88,6 @@ add_executable(ib_phys_tool main.cpp
         includes/heat_transfer_rate.cpp
         includes/heat_transfer_rate.h
         includes/heat_transfer_rate.h
+        includes/blackbody_rad.cpp
+        includes/blackbody_rad.h
 )

@@ -42,6 +42,7 @@
 #include "includes/photon_energy.h"
 #include "includes/reactor_eqs.h"
 #include "includes/heat_transfer_rate.h"
+#include "includes/blackbody_rad.h"
 
 using std::vector, std::string, std::cin, std::cout, std::ws, std::pair;
 
@@ -100,7 +101,8 @@ const vector all_questions = {
     photon_energy,
     hydroelec_power,
     wind_turbine_power,
-    heat_transfer_rate
+    heat_transfer_rate,
+    bbody_rad
 };
 
 const vector cards = {pickCueCard};
@@ -177,6 +179,10 @@ const vector nuclear = {
     photon_energy
 };
 
+const vector space = {
+    bbody_rad
+};
+
 const vector<pair<vector<void(*)()>, string>> units = {
     {cards, "Cue cards"},
     {graphs, "Graph analysis"},
@@ -185,6 +191,7 @@ const vector<pair<vector<void(*)()>, string>> units = {
     {energy, "Energy"},
     {electromagnetism, "Electromagnetism"},
     {waves, "Waves"},
+    {space, "Space & Cosmos"},
     {all_questions, "Everything"},
 };
 
